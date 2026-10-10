@@ -383,14 +383,9 @@ footer b{color:var(--navy)}
     </div>
   </div>
 
-  <!-- KPI 行 -->
+  <!-- KPI 行：整体（累计）口径 -->
   <div class="grid g4" style="margin-bottom:20px">
     <div class="card kpi reveal">
-      <div class="lab">本月开发程序</div>
-      <div class="val">7 <small>个</small></div>
-      <div class="note">覆盖直播中控 / 运营岗 / 兴趣电商岗 / 财务岗等 · 累计调优 4 个</div>
-    </div>
-    <div class="card kpi p reveal">
       <div class="lab">已开发运行程序</div>
       <div class="val">51 <small>个</small></div>
       <div class="note">覆盖销售客服 / 运营 / 企管 / 产品 / 物流 / 财务 / 兴趣电商</div>
@@ -400,10 +395,15 @@ footer b{color:var(--navy)}
       <div class="val">2600 <small>小时</small></div>
       <div class="note">在跑程序稳定运行，降本增效成效显著</div>
     </div>
-    <div class="card kpi o reveal">
+    <div class="card kpi p reveal">
       <div class="lab">累计节省人力</div>
       <div class="val">1625 <small>人天</small></div>
-      <div class="note">13000 小时 · 按口径折算约 60 万元</div>
+      <div class="note">折合 13000 小时</div>
+    </div>
+    <div class="card kpi o reveal">
+      <div class="lab">累计节省金额</div>
+      <div class="val">60 <small>万元</small></div>
+      <div class="note">按口径折算累计节省人力成本</div>
     </div>
   </div>
 
@@ -486,29 +486,6 @@ footer b{color:var(--navy)}
   <!-- ===== 2. 程序数据概览 ===== -->
   <div class="h3" style="margin:36px 0 14px">2. 程序数据概览</div>
 
-  <div class="grid g4" style="margin-bottom:20px">
-    <div class="card kpi p reveal">
-      <div class="lab">已开发运行程序</div>
-      <div class="val">51 <small>个</small></div>
-      <div class="note">覆盖销售客服 / 运营 / 企管 / 产品 / 物流 / 财务 / 兴趣电商</div>
-    </div>
-    <div class="card kpi reveal">
-      <div class="lab">年度需求数量</div>
-      <div class="val">112 <small>项</small></div>
-      <div class="note">年度累计接收需求</div>
-    </div>
-    <div class="card kpi g reveal">
-      <div class="lab">需求最多板块</div>
-      <div class="val">35 <small>项 · 运营</small></div>
-      <div class="note">占年度需求 31.25%</div>
-    </div>
-    <div class="card kpi o reveal">
-      <div class="lab">9 月运行时长</div>
-      <div class="val">600 <small>小时</small></div>
-      <div class="note">当月节省约 13.95 万元</div>
-    </div>
-  </div>
-
   <div class="card reveal" style="overflow:hidden">
     <div class="tabs" role="tablist">
       <button type="button" class="tab active" data-panel="panel-trend">📈 月度趋势</button>
@@ -554,6 +531,30 @@ footer b{color:var(--navy)}
     <div>
       <h2>月度概览</h2>
       <p>九月核心开发流程及价值 · 本月核心成果</p>
+    </div>
+  </div>
+
+  <!-- 本月数据（本月口径，非累计） -->
+  <div class="grid g4" style="margin-bottom:22px">
+    <div class="card kpi reveal">
+      <div class="lab">本月开发程序</div>
+      <div class="val">7 <small>个</small></div>
+      <div class="note">覆盖直播中控 / 运营岗 / 兴趣电商岗 / 财务岗等</div>
+    </div>
+    <div class="card kpi g reveal">
+      <div class="lab">本月运行时长</div>
+      <div class="val">600 <small>小时</small></div>
+      <div class="note">9 月全流程累计运行时长</div>
+    </div>
+    <div class="card kpi o reveal">
+      <div class="lab">本月节省金额</div>
+      <div class="val">13.95 <small>万元</small></div>
+      <div class="note">当月节省 139,533.6 元</div>
+    </div>
+    <div class="card kpi p reveal">
+      <div class="lab">本月新增 Skill 封装</div>
+      <div class="val">2 <small>个</small></div>
+      <div class="note">商品评论分析 / 多平台乱价监控（初步完成）</div>
     </div>
   </div>
 
