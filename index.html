@@ -369,7 +369,7 @@ footer b{color:var(--navy)}
   <div class="wrap">
     <div class="pill"><span class="dot"></span>RPA × AI · 从「流程运行」走向「Skill 化、服务化」</div>
     <h1>RPA&amp;AI 九月项目汇报<br><span>提效常态化，AI 使用向进阶跃迁</span></h1>
-    <p class="sub">51 个程序稳定运行，累计节省人力 1625 人天、折合成本约 60 万元；AI 使用人数由 8 月 15 人增长至 9 月 50 人；AI 已在抖音数据抓取、审核台、销售数据看板、AI 自动筛选达人四大真实业务场景落地。</p>
+    <p class="sub">51 个程序稳定运行，累计节省人力 1625 人天、折合成本约 63 万元；AI 使用人数由 8 月 15 人增长至 9 月 50 人；AI 已在抖音数据抓取、审核台、销售数据看板、AI 自动筛选达人四大真实业务场景落地。</p>
     <div class="meta">
       <span>汇报人：<b>罗昊、曾泽霖</b></span>
       <span>汇报周期：<b>2026.09.01 — 2026.09.30</b></span>
@@ -409,7 +409,7 @@ footer b{color:var(--navy)}
     </div>
     <div class="card kpi o reveal">
       <div class="lab">累计节省金额</div>
-      <div class="val">60 <small>万元</small></div>
+      <div class="val">63 <small>万元</small></div>
       <div class="note">按口径折算累计节省人力成本</div>
     </div>
   </div>
@@ -467,7 +467,7 @@ footer b{color:var(--navy)}
   <div class="grid g2">
     <div class="card dual reveal">
       <h4><span class="dotp"></span>运行与节省成效</h4>
-      <p>全部程序累计运行总时长 <b>2600 小时</b>，累计节省人力时间 <b>13000 小时（折合 1625 人天）</b>；按口径折算累计节省人力成本约 <b>60 万元</b>。</p>
+      <p>全部程序累计运行总时长 <b>2600 小时</b>，累计节省人力时间 <b>13000 小时（折合 1625 人天）</b>；按口径折算累计节省人力成本约 <b>63 万元</b>。</p>
     </div>
     <div class="card dual reveal">
       <h4><span class="dotb"></span>覆盖部门</h4>
@@ -540,13 +540,13 @@ footer b{color:var(--navy)}
     </div>
     <div class="card kpi g reveal">
       <div class="lab">本月运行时长</div>
-      <div class="val">600 <small>小时</small></div>
+      <div class="val">750 <small>小时</small></div>
       <div class="note">9 月全流程累计运行时长</div>
     </div>
     <div class="card kpi o reveal">
       <div class="lab">本月节省金额</div>
-      <div class="val">13.95 <small>万元</small></div>
-      <div class="note">当月节省 139,533.6 元</div>
+      <div class="val">17.44 <small>万元</small></div>
+      <div class="note">当月节省 174,418.65 元</div>
     </div>
   </div>
 
@@ -859,9 +859,9 @@ footer b{color:var(--navy)}
   if(typeof echarts === 'undefined') return;
 
   var months  = ['1月','2月','3月','4月','5月','6月','7月','8月','9月'];
-  var flowCnt = [10,10,11,17,22,29,37,44,51];                                                      // 总流程数
-  var runH    = [10,10,100,115,195,395,500,700,600];                                               // 运行时长(H)
-  var saveY   = [2216.35,2216.35,22166.51,26448.97,39050.07,90385.07,116277.07,162789.2,139533.6]; // 当月节省(元)
+  var flowCnt = [0,0,11,17,22,29,37,44,51];                                                        // 总流程数
+  var runH    = [10,10,100,116,170,395,500,700,750];                                                // 运行时长(H)
+  var saveY   = [2298.85,2298.85,22100.51,26445.97,39170.07,90804.9,115279.07,162789.2,174418.65];   // 当月节省(元)
 
   var PANELS = {
     'panel-trend':    ['chart-month-proc','chart-month-save'],
@@ -920,7 +920,7 @@ footer b{color:var(--navy)}
         yAxis:[
           {type:'value',name:'运行时长(H)',nameTextStyle:{color:'#7b8798',fontSize:11},max:800,interval:200,
             axisLabel:{color:'#7b8798',fontSize:11},splitLine:{lineStyle:{color:'#eef2f9'}}},
-          {type:'value',name:'当月节省(元)',nameTextStyle:{color:'#7b8798',fontSize:11},max:180000,interval:30000,
+          {type:'value',name:'当月节省(元)',nameTextStyle:{color:'#7b8798',fontSize:11},max:200000,interval:50000,
             axisLabel:{color:'#7b8798',fontSize:11,formatter:function(v){return (v/10000) + '万';}},splitLine:{show:false}}
         ],
         series:[
